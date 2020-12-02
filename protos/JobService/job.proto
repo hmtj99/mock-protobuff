@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package="/JobService";
+
+message Job{
+    string JobID = 1;
+}
+
+message JobRequest{
+    Job job = 1;
+}
+
+message JobResponse{
+    string result = 1;
+}
+
+service JobService{
+    rpc doJob(JobRequest) returns (JobResponse) {};
+}

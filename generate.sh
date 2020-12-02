@@ -1,0 +1,1 @@
+protoc --proto_path=protos/JobService --go_out=protobuffs --go-grpc_out=protobuffs protos/JobService/job.proto
